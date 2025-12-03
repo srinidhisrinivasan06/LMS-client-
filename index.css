@@ -3,7 +3,7 @@ margin: 0;
 padding: 0;
 }
 .signup{
-    border:2px solid black;
+    border:2px solid rgb(65, 60, 60);
     height :500px;
     width: 500px;
     border-radius: 50px;
@@ -13,14 +13,17 @@ padding: 0;
     align-items: center;
     justify-content: center;
     padding:25px;
-    background-color: cornflowerblue;
+    background-color: rgba(20, 21, 21, 0.5);
 }
 .signup-container{
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    background-image: url(https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_vogueuk.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1674567272/vogueuk_pieces-of-me-getting-to-know-priyanka-chopra-jonas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .data{
     display: flex;
@@ -36,27 +39,33 @@ padding: 0;
 .data button{
     height:35px;
     width:100px;
-    background-color: black;
+    background-color: rgb(204, 37, 37);
     color:white;
    
 }
 .header-container{
-background-color: rgb(20, 17, 13);
+background-color: rgb(179, 174, 174);
+border-radius: 50px;
 height:100px;
 display: flex;
 justify-content: space-around;
 align-items: center;
 border-radius: 25px;
 }
-.head-items{
-    background-color: cornflowerblue;
-    
-}
+
 .logo-image{
     height: 50px; 
-    width: 50px;
+    width: 100px;
     display: flex;
-    justify-content:start;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    font-weight:bold;
+    color: rgb(76, 70, 70);
+    background-image:url();
+}
+.logo-image::before{
+    content: "Vogue";
 }
 .head-items{
     display:flex;
@@ -68,6 +77,217 @@ border-radius: 25px;
     font-size:20px;
 }
 
-.logo{
+.head-items a{
+    text-decoration:none;
+    color: rgb(72, 70, 70);
+    letter-spacing:0.3 rem;
+    transition: 4s;
+}
+.head-items a:hover{
+    letter-spacing: 0;
+    color: rgb(142, 135, 135);
     
+}
+.box{
+    height:200px;
+    width: 200px;
+    background-color: black;
+    transition:ease;
+
+}
+.box:hover{
+   
+    background-color: darkred;
+    transition:ease;
+}
+
+.vogue-message{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    transition: 4s;
+    z-index: 10;
+}
+
+.vogue-message:hover{
+    color: rgb(255, 182, 193);
+    transform: translateX(-50%) scale(1.1);
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
+
+.video-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.video-player{
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(255,255,255,0.3);
+}
+
+#About{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 60px 20px;
+    display: block;
+    width: 100%;
+    min-height: auto;
+}
+
+#About .box{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    height: auto;
+    overflow: visible;
+}
+
+#About h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(255, 182, 193);
+    text-align: center;
+}
+
+#About p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto;
+    text-align: justify;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+#contact{
+    background-color: rgb(60, 60, 60);
+    padding: 40px 20px 60px 20px;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+#contact .box{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#contact h1{
+    color: rgb(255, 182, 193);
+    margin-bottom: 20px;
+}
+
+#contact textarea{
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+}
+
+#contact button{
+    background-color: rgb(204, 37, 37);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 2s;
+}
+
+#contact button:hover{
+    background-color: rgb(255, 182, 193);
+    color: black;
+}
+
+.footer{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    padding: 40px 20px 30px 20px;
+    margin-top: 0;
+    border-top: 2px solid rgb(255, 182, 193);
+    position: relative;
+    z-index: 2;
+    clear: both;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.footer-block{
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-block h3{
+    color: rgb(255, 182, 193);
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    display: inline;
+}
+
+.footer-block p{
+    color: rgb(180, 180, 180);
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+    display: inline;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgb(60, 60, 60);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p{
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    margin: 0;
 }
