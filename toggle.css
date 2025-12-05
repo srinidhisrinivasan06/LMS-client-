@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    color:black;
+}
+
+body.dark{
+    background:#222;
+    color:white;
+}
+
+.box{
+    padding:20px;
+    border:2px solid black;
+    background:#a1edf8;
+    box-shadow:50px;
+    
+
+}
+
+.l-button, .d-button{
+    padding:10px 20px;
+    margin:10px;
+    border:1px solid black;
+    cursor:pointer;
+}
